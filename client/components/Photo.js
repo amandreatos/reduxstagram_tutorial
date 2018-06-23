@@ -17,8 +17,8 @@ const Photo = React.createClass({
           </Link>
           <CSSTransitionGroup
             transitionName="like"
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={500}
+            transitionEnterTimeout={400}
+            transitionLeaveTimeout={400}
           >
             <span key={post.likes} className="likes-heart">
               {post.likes}

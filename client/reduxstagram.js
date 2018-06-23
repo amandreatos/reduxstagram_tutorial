@@ -9,6 +9,19 @@ import css from "./styles/style.styl";
 import { Provider } from "react-redux";
 import store, { history } from "./store";
 
+import Raven from "raven-js";
+import { sentry_url, logException } from "./data/config";
+
+// Raven.config(sentry_url).install();
+
+// logException(new Error("download failed!"), {
+//   email: "anthony@321webmarketing.com"
+// });
+
+
+// Raven.captureMessage('Something bad happend!');
+// Raven.showReportDialog();
+
 const router = (
   <Provider store={store}>
     <Router history={history}>
